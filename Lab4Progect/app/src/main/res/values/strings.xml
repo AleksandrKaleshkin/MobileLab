@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Lab4Progect</string>
+    <string name="sun">Солнце</string>
+    <string name="grass">Трава</string>
+    <string name="sky">Небо</string>
+
+</resources>
