@@ -1,11 +1,6 @@
-<xml android:version="1.0"
-    android:encoding="utf-8"
-    xmlns:android="http://schemas.android.com/apk/res/android" />?>
-
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:dayout_height="match_parent" android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <ImageView
         android:id="@+id/sky"
         android:layout_width="fill_parent"
