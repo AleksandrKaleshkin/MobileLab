@@ -1,4 +1,5 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -7,16 +8,7 @@
         android:layout_height="fill_parent"
         android:contentDescription="@string/sky"
         android:src="@drawable/sky" />
-    
-    <ImageView 
-        android:id="@+id/sun"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:contentDescription="@string/sun"
-        android:scaleType="fitCenter"
-        android:src="@drawable/sun" />
-    
+
     <ImageView
         android:id="@+id/grass"
         android:layout_width="fill_parent"
@@ -24,5 +16,6 @@
         android:layout_alignParentBottom="true"
         android:contentDescription="@string/grass"
         android:src="@drawable/grass" />
+
 </RelativeLayout>
 
