@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                 Cursor cursor = mDb.rawQuery("SELECT * FROM groupmate", null);
                 cursor.moveToFirst();
                 while (!cursor.isAfterLast()) {
-                    product += "Ф: " +cursor.getString(1) + " И: " +cursor.getString(2) + "\nО: " + cursor.getString(3)+ " Время: " + cursor.getString(4) +"\n\n";
+                    product +=cursor.getString(0) + ". Фамилия: " +cursor.getString(1) + " Имя: " +cursor.getString(2) + "\nОтчество: " + cursor.getString(3)+ " Время: " + cursor.getString(4) +"\n\n";
                     cursor.moveToNext();
                 }
                 cursor.close();
