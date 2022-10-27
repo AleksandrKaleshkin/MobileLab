@@ -9,9 +9,12 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,5 +67,28 @@ public class MainActivity extends AppCompatActivity {
                 textView.setText(product);
             }
         });
+
+
     }
-}
+        public void BtnClick(View view) {
+            EditText secName, firName, patronymic, time;
+            String _secName, _firName, _patronymic, _time;
+
+
+            secName = (EditText) findViewById(R.id.secName);
+            _secName = secName.getText().toString();
+            firName = (EditText) findViewById(R.id.firName);
+            _firName = firName.getText().toString();
+            patronymic = (EditText) findViewById(R.id.patr);
+            _patronymic = patronymic.getText().toString();
+            time = (EditText) findViewById(R.id.time);
+            _time = time.getText().toString();
+
+
+            String data = "INSERT INTO groupmate (id, secondName, firstName, patronymic, time) VALUES (_secName, _firName, _patronymic, _time)";
+            mDb.execSQL(data);
+
+
+        }
+    }
+
